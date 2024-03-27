@@ -9,13 +9,17 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-jobs:
-- job: MyJob
-  displayName: My First Job
-  workspace:
-    clean: outputs
-  steps:
-  - script: echo My first job
+steps:
+- script: echo hello word
+  displayName: 'run hello word'
+
+# jobs:
+# - job: MyJob
+#   displayName: My First Job
+#   workspace:
+#     clean: outputs
+#   steps:
+#   - script: echo My first job
 
 # pool:
 #   vmImage: 'macOS-latest'
